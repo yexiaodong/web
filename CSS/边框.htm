@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>边框</title>
+    <style >
+        .div1
+        {
+            border:2px solid;
+            border-radius:25px;
+            -moz-border-radius:25px/* 老的 Firefox */
+        }
+        
+        .div2
+        {
+            background:#ffcc33;
+            box-shadow:5px 5px 2px #888888;
+        }
+        
+        .div3
+        {
+            border-image:url(border.png)5 5 round;
+        }
+        
+        .div4
+        {
+            border-image:url(border.png)5 5 stretch;
+        }
+    </style>
+</head>
+<body>
+    border后三个参数的含义是：<br />
+    边框线的宽度：thin(细线)、medium(中粗线)、thick(粗线）；<br />
+    边框线的类型：none(无边框)、solid（实线）、有九个类型；<br />
+    边框线的颜色：red<br />
+    <div class="div1">
+    这个div有圆角
+    </div>
+    <br />
+    <br />
+    <div class="div2">
+    这个div有阴影
+    </div>
+    <br />
+    <br />
+    <div class="div3">
+    这个div是使用图片绘制边框-图片填充。
+    </div>
+    <br />
+    <br />
+    <div class="div4">
+    这个div是使用图片绘制边框-图片拉伸。
+    </div>
+</body>
+</html>
