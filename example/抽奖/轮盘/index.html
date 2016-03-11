@@ -68,7 +68,7 @@ $(function(){
 
 	$rotaryArrow.click(function(){
 		var data = [0, 1, 2, 3, 4, 5, 6, 7];
-		data = data[Math.floor(Math.random()*data.length)];
+		data = data[Math.floor(Math.random()*data.length)];//floor向下取整，random获取0-1的随机数，包含0不含1
 		switch(data){
 			case 1: 
 				rotateFunc(1,87,'恭喜您获得了 <em>1</em> 元代金券');
